@@ -1,0 +1,22 @@
+//example of recursion in c++
+#include <iostream>
+using namespace std;
+
+int factorial_function(int n){
+    if (n<=1){
+        return 1;
+    }
+    else{
+        return n*factorial_function(n-1);
+    }
+}
+int main(){
+
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+
+    factorial_function(5);
+    cout<<"Factorial of entered number is: "<<factorial_function(5)<<endl;
+    return 0;
+}
